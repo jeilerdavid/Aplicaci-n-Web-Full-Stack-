@@ -103,16 +103,16 @@ El sistema está diseñado para dar soporte a tres tipos de usuarios con funcion
 
 A continuación, se presenta una tabla con los principales endpoints disponibles en la API del backend. Estos endpoints permiten gestionar usuarios, destinos turísticos y autenticación, con restricciones según el rol del usuario autenticado:
 
-Método	  Endpoint	           Descripción	                                 Autenticación / Rol
-POST	    /api/login	         Inicia sesión y devuelve un token JWT         No
-GET	      /api/destinos	       Lista todos los destinos turísticos	         Público
-GET	      /api/destinos/:id	   Obtiene detalles de un destino específico	   Público
-POST	    /api/destinos	       Crea un nuevo destino turístico	             Guía Turístico
-PUT	      /api/destinos/:id	   Edita un destino turístico	                   Guía Turístico
-DELETE	  /api/destinos/:id    Elimina un destino turístico	                 Guía Turístico
-GET    	  /api/usuarios	       Lista todos los usuarios registrados          Administrador
-POST  	  /api/usuarios	       Crea un nuevo usuario	                       Administrador
-PUT	      /api/usuarios/:id	   Modifica datos o rol de un usuario	           Administrador
+# Método	 | Endpoint	          | Descripción	                                | Autenticación / Rol
+  POST	   | /api/login	        | Inicia sesión y devuelve un token JWT       |  No
+  GET	    |  /api/destinos	    |   Lista todos los destinos turísticos	      |   Público
+  GET	    |  /api/destinos/:id	|   Obtiene detalles de un destino específico	|   Público
+  POST	   | /api/destinos	     |  Crea un nuevo destino turístico	           |  Guía Turístico
+  PUT	    |  /api/destinos/:id	|   Edita un destino turístico	               |    Guía Turístico
+  DELETE	 | /api/destinos/:id  |  Elimina un destino turístico	              |   Guía Turístico
+  GET    	|  /api/usuarios	    |   Lista todos los usuarios registrados      |    Administrador
+  POST  	 | /api/usuarios	     |  Crea un nuevo usuario	                     |  Administrador
+  PUT	    |  /api/usuarios/:id	|  Modifica datos o rol de un usuario	        |   Administrador
 
 Perfecto, continuamos con la sección 6. Implementación, que describe el proceso de desarrollo, retos técnicos, decisiones tomadas y cómo se organizó el trabajo.
 #  6. Implementación
